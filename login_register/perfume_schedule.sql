@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2025 at 07:01 AM
+-- Generation Time: Dec 12, 2025 at 08:25 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -127,26 +127,25 @@ INSERT INTO `schedules` (`schedule_id`, `user_id`, `venue_id`, `shift_date`, `st
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `role_id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `full_name` varchar(100) DEFAULT NULL,
-  `phone_number` varchar(20) DEFAULT NULL
+  `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `role_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `role_id`, `username`, `password`, `full_name`, `phone_number`) VALUES
-(1, 4, 'kenny_sa123', 'password123', 'Kenny (Super Admin)', '0811-0000-0001'),
-(2, 3, 'rafdan_adm123', 'password123', 'Rafdah (Admin)', '0811-0000-0002'),
-(3, 2, 'jj_mngr123', 'password123', 'JJ (Manager)', '0811-0000-0003'),
-(4, 1, 'fio_off', 'password123', 'Fio Officer', '0812-1234-5678'),
-(5, 1, 'ronaldo_off', 'password123', 'Ronaldo Officer', '0812-1234-5078'),
-(6, 1, 'messi_off', 'password123', 'Messi Officer', '0822-8234-5678'),
-(7, 1, 'neymar_off', 'password123', 'Neymar Officer', '0812-8834-1178'),
-(8, 1, 'alvino_off', 'password123', 'Alvino Officer', '0812-8765-4321');
+INSERT INTO `users` (`user_id`, `name`, `email`, `password`, `role_id`) VALUES
+(1, 'Kenny (Super Admin)', 'kenny_sa123', 'password123', 4),
+(2, 'Rafdah (Admin)', 'rafdan_adm123', 'password123', 3),
+(3, 'JJ (Manager)', 'jj_mngr123', 'password123', 2),
+(4, 'Fio Officer', 'fio_off', 'password123', 1),
+(5, 'Ronaldo Officer', 'ronaldo_off', 'password123', 1),
+(6, 'Messi Officer', 'messi_off', 'password123', 1),
+(7, 'Neymar Officer', 'neymar_off', 'password123', 1),
+(8, 'Alvino Officer', 'alvino_off', 'password123', 1);
 
 -- --------------------------------------------------------
 
@@ -245,12 +244,6 @@ ALTER TABLE `roles`
 --
 ALTER TABLE `schedules`
   MODIFY `schedule_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `venues`
