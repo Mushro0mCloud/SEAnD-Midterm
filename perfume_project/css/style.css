@@ -103,7 +103,7 @@ button {
 button:active { transform: scale(0.98); }
 .btn-danger { background-color: #FF5252; box-shadow: 0 3px 5px rgba(255, 82, 82, 0.3); }
 
-/* 6. TABLES (The Fix for "Cropped" Layout) */
+/* Tables within the system */
 table {
     width: 100%;
     border-collapse: collapse;
