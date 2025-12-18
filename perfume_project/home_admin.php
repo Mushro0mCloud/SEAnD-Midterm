@@ -3,10 +3,10 @@ session_start();
 include "includes/db_conn.php";
 include "includes/functions.php"; // Added this just in case you want to log actions
 
-// Security Check
+// Security Check for only admins
 if ($_SESSION['role_id'] != 3) { header("Location: index.php"); exit(); }
 
-// Logic to Add Schedule
+// Logic to Add Schedules taken from the database
 if (isset($_POST['add_schedule'])) {
     $uid = $_POST['user_id']; 
     $vid = $_POST['venue_id']; 
@@ -19,13 +19,13 @@ if (isset($_POST['add_schedule'])) {
             VALUES ('$uid','$vid','$date','$start','$end','$note')";
             
     if(mysqli_query($conn, $sql)) {
-        // Optional: Log this action
+        // Optional but logging this action which shows up even when refreshed
         log_activity($conn, $_SESSION['id'], 'CREATE_SCHEDULE', "Assigned schedule to User ID $uid on $date at Venue ID $vid");
     }
-}
+} // the style is below
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
     <title>Admin Dashboard</title>

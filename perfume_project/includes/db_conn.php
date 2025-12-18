@@ -3,7 +3,7 @@ $sname = "localhost";
 $uname = "root";
 $password = "";
 $db_name = "perfume_schedule";
-
+// connection here
 $conn = mysqli_connect($sname, $uname, $password, $db_name);
 
 if (!$conn) {
