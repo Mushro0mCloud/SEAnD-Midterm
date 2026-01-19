@@ -22,7 +22,12 @@
             
             <br>
             <button type="submit">LOGIN</button>
-        </form>
+    
+    <div style="margin-top: 15px; text-align: center;">
+        <a href="faq.php" style="font-size: 14px; color: #1976D2;">Need Help? Read FAQ</a>
+    </div>
+
+</form>
 
         <p style="margin-top:20px; font-size:12px; color:#aaa;">© 2025 Perfume Co.</p>
     </div>
