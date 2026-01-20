@@ -29,7 +29,7 @@
 
 </form>
 
-        <p style="margin-top:20px; font-size:12px; color:#aaa;">© 2025 Perfume Co.</p>
+        <p style="margin-top:20px; font-size:12px; color:#aaa;">© 2026 Perfume Co.</p>
     </div>
 </body>
 </html>
