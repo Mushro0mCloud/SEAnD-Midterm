@@ -34,7 +34,7 @@
 
         <div class="faq-item">
             <div class="faq-q">Q: I forgot my password. What do I do?</div>
-            <div class="faq-a">A: Currently, please contact the Super Admin (Kenny) to reset your password manually. We are adding an automatic reset feature soon.</div>
+            <div class="faq-a">A: Currently if issues persist, please contact the Super Admin (Kenny) or 081398524717 to reset your password manually. We are adding an automatic reset feature soon.</div>
         </div>
 
         <div class="faq-item">
