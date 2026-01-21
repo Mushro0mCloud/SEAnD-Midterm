@@ -31,7 +31,8 @@
         <h2>❓ Frequently Asked Questions</h2>
         <a href="index.php">← Back to Login</a>
         <hr>
-
+        <!-- List of q & a -->
+    
         <div class="faq-item">
             <div class="faq-q">Q: I forgot my password. What do I do?</div>
             <div class="faq-a">A: Please click  the "forgot password" in the main login page and follow the required steps.</div>
