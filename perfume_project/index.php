@@ -26,6 +26,7 @@
 
     <button type="submit">LOGIN</button>
 
+    // Added FAQ link for user assistance
     <div style="margin-top: 15px; text-align: center;">
         <a href="faq.php" style="font-size: 14px; color: #1976D2;">Need Help? Read FAQ</a>
     </div>

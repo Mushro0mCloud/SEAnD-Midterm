@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+        // Page to fill the details for password reset
     <div class="container" style="display:flex; flex-direction:column; justify-content:center;">
         <h1>Reset Password</h1>
         <p>Enter your details to recover your account.</p>
