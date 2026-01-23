@@ -6,7 +6,8 @@ if (isset($_POST['email']) && isset($_POST['answer']) && isset($_POST['new_passw
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $answer = mysqli_real_escape_string($conn, $_POST['answer']);
     $new_pass = mysqli_real_escape_string($conn, $_POST['new_password']);
-
+        //mysqli_real_escape_string helps to kepe sql injection away / special characters involved
+    
     // 1. Check if user exists and answer is correct
     // We also fetch the 'password' to store it in logs before we change it
     $sql = "SELECT user_id, password FROM users WHERE email='$email' AND security_answer='$answer'";
